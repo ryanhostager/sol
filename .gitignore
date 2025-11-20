@@ -1,0 +1,15 @@
+.DS_Store
+node_modules/
+dist/
+coverage/
+/.idea
+.vscode
+dist/
+**/.DS_Store
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+
+storybook-static
+.nx
