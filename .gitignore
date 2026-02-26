@@ -13,3 +13,4 @@ yarn-error.log*
 
 storybook-static
 .nx
+libs/design-system/src/tailwind.out.css
