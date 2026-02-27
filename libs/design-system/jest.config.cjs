@@ -1,9 +1,6 @@
 module.exports = {
   preset: "ts-jest",
-  testEnvironment: "jest-environment-jsdom",
-  testEnvironmentOptions: {
-    resources: "usable"
-  },
+  testEnvironment: "jsdom",
   setupFilesAfterEnv: ["<rootDir>/src/setupTests.ts"],
   moduleNameMapper: {
     "\\.(css|less|scss|sass)$": "identity-obj-proxy",
@@ -11,5 +8,7 @@ module.exports = {
   transform: {
     "^.+\\.(ts|tsx|js|jsx)$": "ts-jest",
   },
+  testPathIgnorePatterns: ["/node_modules/", "/dist/"],
+  testMatch: ["**/src/**/?(*.)+(spec|test).[tj]s?(x)"],
   coverageDirectory: "<rootDir>/coverage/",
 };

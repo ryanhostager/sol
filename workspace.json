@@ -21,6 +21,12 @@
             },
             "port": 6006
           }
+        },
+        "lint": {
+          "executor": "@nx/eslint:eslint",
+          "options": {
+            "lintFilePatterns": ["libs/design-system/src/**/*.{ts,tsx,js,jsx}"]
+          }
         }
       }
     },

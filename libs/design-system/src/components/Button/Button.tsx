@@ -1,7 +1,6 @@
 import React from "react";
 
-export interface ButtonProps
-  extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   label?: string;
   variant?: "filled" | "outlined" | "bare";
   color?: "primary" | "secondary" | "tertiary";

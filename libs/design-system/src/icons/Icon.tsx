@@ -37,7 +37,6 @@ export const Icon = ({
 
   const defaultColor = "text-gray-500 dark:text-gray-300";
   const colorClass = color ? color : defaultColor;
-  console.log({ color, defaultColor, name });
 
   return (
     <IconSvg
