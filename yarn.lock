@@ -2874,6 +2874,14 @@
   dependencies:
     "@sinonjs/commons" "^3.0.1"
 
+"@storybook/addon-a11y@^9.1.19":
+  version "9.1.19"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-a11y/-/addon-a11y-9.1.19.tgz#01190dcc689f7288f53aa3a87a52f6e2625eb282"
+  integrity sha512-UjJ8qIKlI7UvGYVVV6axO1TgyySGZwbTEu/JbKjYxVTmZKBHK9PQZjEysYwqMTmqDtfeQ33Cg7WfkpeHdBmdgw==
+  dependencies:
+    "@storybook/global" "^5.0.0"
+    axe-core "^4.2.0"
+
 "@storybook/builder-webpack5@9.1.19":
   version "9.1.19"
   resolved "https://registry.yarnpkg.com/@storybook/builder-webpack5/-/builder-webpack5-9.1.19.tgz#d436cdd83c6c844a90c811ba420ae81a6a6b043d"
@@ -4169,7 +4177,7 @@ available-typed-arrays@^1.0.7:
   dependencies:
     possible-typed-array-names "^1.0.0"
 
-axe-core@^4.10.0:
+axe-core@^4.10.0, axe-core@^4.2.0:
   version "4.11.1"
   resolved "https://registry.yarnpkg.com/axe-core/-/axe-core-4.11.1.tgz#052ff9b2cbf543f5595028b583e4763b40c78ea7"
   integrity sha512-BASOg+YwO2C+346x3LZOeoovTIoTrRqEsqMa6fmfAV0P+U9mFr9NsyOEpiYvFjbc64NMrSswhV50WdXzdb/Z5A==

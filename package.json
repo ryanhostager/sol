@@ -36,6 +36,7 @@
     "@nx/react": "22.0.4",
     "@nx/storybook": "22.0.4",
     "@nx/web": "22.0.4",
+    "@storybook/addon-a11y": "^9.1.19",
     "@storybook/react-webpack5": "^9.1.16",
     "@tailwindcss/cli": "^4.2.1",
     "@tailwindcss/postcss": "^4.1.17",
