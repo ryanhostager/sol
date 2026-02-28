@@ -6,6 +6,17 @@ export default {
   //   addons: ['@storybook/addon-docs'],
   framework: '@storybook/react-webpack5',
 
+  // enable TypeScript prop extraction
+  typescript: {
+    reactDocgen: 'react-docgen-typescript',
+    reactDocgenTypescriptOptions: {
+      shouldExtractLiteralValuesFromEnum: true,
+      // ignore props coming from node_modules
+      propFilter: (prop) =>
+        prop.parent ? !/node_modules/.test(prop.parent.fileName) : true,
+    },
+  },
+
   webpackFinal: async (config) => {
     // Remove all existing CSS rules
     config.module.rules = config.module.rules.filter(
@@ -43,5 +54,8 @@ export default {
     return config;
   },
 
-  addons: ['@storybook/addon-a11y']
+  addons: [
+    '@storybook/addon-docs',
+    '@storybook/addon-a11y'
+  ],
 };
