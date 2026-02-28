@@ -2,8 +2,10 @@ import path from 'path';
 
 export default {
   stories: ['../src/**/*.stories.@(js|jsx|ts|tsx)'],
-//   addons: ['@storybook/addon-docs'],
+
+  //   addons: ['@storybook/addon-docs'],
   framework: '@storybook/react-webpack5',
+
   webpackFinal: async (config) => {
     // Remove all existing CSS rules
     config.module.rules = config.module.rules.filter(
@@ -40,4 +42,6 @@ export default {
     config.resolve.extensions.push('.ts', '.tsx');
     return config;
   },
+
+  addons: ['@storybook/addon-a11y']
 };
