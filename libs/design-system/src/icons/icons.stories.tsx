@@ -1,10 +1,10 @@
-import React from "react";
+import React from 'react';
 
-import type { Meta, StoryObj } from "@storybook/react";
-import { Icon, ICON_MAP, IconProps } from "./Icon";
+import type { Meta, StoryObj } from '@storybook/react';
+import { Icon, ICON_MAP, IconProps } from './Icon';
 
 const meta: Meta<typeof Icon> = {
-  title: "Icons",
+  title: 'Icons',
   component: Icon,
 };
 

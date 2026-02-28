@@ -15,11 +15,14 @@
     "lint": "nx run-many --target=lint --all --verbose",
     "lint:fix": "nx run-many --target=lint --all -- --fix",
     "test": "nx run-many --target=test --all",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,css,md,mdx,html}\"",
+    "format:check": "prettier --check \"**/*.{js,jsx,ts,tsx,json,css,md,mdx,html}\""
   },
   "lint-staged": {
     "*.{ts,tsx,js,jsx}": [
-      "eslint --fix"
+      "eslint --fix",
+      "prettier --write"
     ]
   },
   "devDependencies": {
@@ -66,6 +69,7 @@
     "postcss": "^8.5.6",
     "postcss-cli": "^11.0.1",
     "postcss-loader": "^8.2.1",
+    "prettier": "^2.6.2",
     "storybook": "^9.1.16",
     "style-loader": "^4.0.0",
     "tailwindcss": "^4.2.1",

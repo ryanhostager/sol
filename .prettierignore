@@ -1,0 +1,10 @@
+/node_modules
+/dist
+/build
+/coverage
+.storybook
+.eslintcache
+yarn.lock
+.vscode
+/.nx/cache
+/.nx/workspace-data

@@ -1,5 +1,3 @@
 module.exports = {
-  projects: [
-    "<rootDir>/libs/design-system",
-  ],
+  projects: ['<rootDir>/libs/design-system'],
 };

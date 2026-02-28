@@ -1,12 +1,12 @@
-import React from "react";
-import { PlusIcon } from "./assets/Plus";
-import { GithubIcon } from "./assets/Github";
-import { StarIcon } from "./assets/Star";
-import { CaretUpIcon } from "./assets/CaretUp";
-import { CaretDownIcon } from "./assets/CaretDown";
-import { CaretLeftIcon } from "./assets/CaretLeft";
-import { CaretRightIcon } from "./assets/CaretRight";
-import { HeartIcon } from "./assets/Heart";
+import React from 'react';
+import { PlusIcon } from './assets/Plus';
+import { GithubIcon } from './assets/Github';
+import { StarIcon } from './assets/Star';
+import { CaretUpIcon } from './assets/CaretUp';
+import { CaretDownIcon } from './assets/CaretDown';
+import { CaretLeftIcon } from './assets/CaretLeft';
+import { CaretRightIcon } from './assets/CaretRight';
+import { HeartIcon } from './assets/Heart';
 
 export const ICON_MAP = {
   plus: PlusIcon,
@@ -29,13 +29,13 @@ export const Icon = ({
   name,
   color,
   width = 24,
-  className = "",
+  className = '',
   ...rest
 }: IconProps) => {
   const IconSvg = ICON_MAP[name];
   if (!IconSvg) return null;
 
-  const defaultColor = "text-gray-500 dark:text-gray-300";
+  const defaultColor = 'text-gray-500 dark:text-gray-300';
   const colorClass = color ? color : defaultColor;
 
   return (
